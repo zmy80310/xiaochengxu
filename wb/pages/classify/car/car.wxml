@@ -1,0 +1,9 @@
+<!--pages/classify/car/car.wxml-->
+ <view class="actor1">
+      <view class="sctor1-shop" wx:for="{{shopData}}" bindtap="info" data-id="{{item.id}}">
+        <image class="shop-img" src="{{item.src}}"></image>
+        <view class="shop-price">¥{{item.price}}</view>
+        <view class="shop-name">{{item.name}} {{item.text}}</view>
+      </view>
+  
+  </view>

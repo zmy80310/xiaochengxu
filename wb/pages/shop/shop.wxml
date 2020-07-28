@@ -1,0 +1,45 @@
+<!--pages/shop/shop.wxml-->
+<!--pages/car/car.wxml-->
+<view class="cart" style="{{winH}}">
+  <!-- 未登录 -->
+  <view class="unLog" wx:if="{{!shopData}}">
+    <view class="log-cart">
+      <image src="/img/icon-cart-selected.png"></image>
+    </view>
+    <view class="log-text">购物车还是空的</view>
+    <view class="log-btn" bindtap="goHome">
+      到万表商城逛逛
+    </view>
+  </view>
+  <view class="loged" wx:if="{{shopData}}">
+    <view class="shop-item">
+      <view class="proItem" wx:for="{{shopData}}">
+        <view class="ch-item">
+          <icon wx:if="{{item.selected}}" type="success" color="red" bindtap="selectList" data-index="{{index}}" />
+          <icon wx:else type="circle" bindtap="selectList" data-index="{{index}}" />
+        </view>
+        <view class="img-item" bindtap="revise" data-time="{{item.id}}">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="des-item" bindtap="revise" data-time="{{item.id}}">{{item.name}}</view>
+        <view class="shop-text" bindtap="revise" data-time="{{item.id}}">{{item.text}}</view>
+        <view class="num-item">
+          <text class="number" bindtap="revise" data-time="{{item.id}}">x{{item.number}}</text>
+          <text class="price" bindtap="revise" data-time="{{item.id}}">¥{{item.price}}元</text>
+        </view>
+      </view>
+    </view>
+    <view style="height:100rpx"></view>
+    <view class="pay-item">
+      <icon wx:if="{{selectAllStatus}}" type="success_circle" bindtap="selectAll" />
+      <icon wx:else type="circle" bindtap="selectAll" />
+      <text class="quanxuan">全选</text>
+      <view>
+        <text>合计：</text>
+        <text class="all-price">{{price}}元</text>
+        <view class="btn-pay">结算（{{sum}}）</view>
+      </view>
+    </view>
+  </view>
+</view>
+

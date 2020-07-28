@@ -1,0 +1,39 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="mine">
+
+<view class="mine-top" wx:if="{{look == true}}">
+<view class="mine-l">
+   <image class="mine-img" src="{{src}}"></image>
+</view>
+    <view class="mine-name">{{name}}</view>
+    <view class="quit" bindtap="quit">注销</view>
+</view>
+
+<view class="mine-top" wx:if="{{look==false}}">
+    <image bindtap="login" class="mine-img" src="//m.mi.com/static/img/avatar.76a75b8f17.png"></image>
+    <view class="mine-name" bindtap="login">未登录</view>
+</view>
+<view class="mine-item">
+  <view class="shop-item">
+    <text class="shop-text">我的订单</text>
+    <text class="shop-j">></text>
+  </view>
+<view class="shop-item">
+    <text class="shop-text">我的预售</text>
+    <text class="shop-j">></text>
+  </view>
+  <view class="shop-item">
+    <text class="shop-text">我的卷包</text>
+    <text class="shop-j">></text>
+  </view>
+  <view class="shop-item" bindtap="site">
+    <text class="shop-text">收获地址</text>
+    <text class="shop-j">></text>
+  </view>
+  <view class="shop-item">
+    <text class="shop-text">售后服务</text>
+    <text class="shop-j">></text>
+  </view>
+</view>
+</view>

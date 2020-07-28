@@ -1,0 +1,59 @@
+/* pages/mine/mine.wxss */
+.mine{
+  width:100%;
+  height:100%;
+  background: #eee;
+}
+.mine-top{
+  width:100%;
+  height: 400rpx;
+ position: relative;
+ border:2rpx solid #eee;
+}
+.mine-l{
+  width:100%;
+  text-align: center;
+  margin-top:100rpx;
+}
+.mine-img{
+  width: 140rpx;
+  height:140rpx;
+  border-radius: 50%;
+}
+
+.mine-name{
+  margin-top:30rpx;
+  text-align: center;
+}
+.mine-item{
+  width:100%;
+  background: #fff;
+}
+.shop-item{
+  width: 98%;
+  padding:20rpx 10rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-bottom: 2rpx solid #666;
+}
+.shop-text{
+  font-size: 30rpx;
+  color:#666;
+}
+.shop-j{
+  float: right;
+  color:#666;
+}
+.quit{
+  position: absolute;
+  right: 13rpx;
+  top: 11rpx;
+  width:100rpx;
+  height:60rpx;
+  background: #f00;
+  text-align: center;
+  color:#fff;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  border-radius: 16rpx;
+}

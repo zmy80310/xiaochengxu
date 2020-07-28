@@ -1,0 +1,19 @@
+<view class="list">
+  <view class="user_info"  wx:for="{{shopData}}">
+    <view class="row1" bindtap="option" data-id="{{item.id}}" data-index="{{index}}" data-city="{{item.city}}">
+      <text class="tel"  bindtap="option" data-id="{{item.id}}" data-index="{{index}}" data-city="{{item.city}}">{{item.cell}}</text>
+      <text class="name"  bindtap="option" data-id="{{item.id}}" data-index="{{index}}"  data-city="{{item.city}}">{{item.name}}</text>
+      收
+    </view>
+    <view class="address"  bindtap="option" data-id="{{item.id}}" data-index="{{index}}" data-city="{{item.city}}">{{item.city}} {{item.address}}</view>
+     <view class="change">
+  <view class="change-img" bindtap="newlt" data-id="{{item.id}}"> 编辑</view>
+  <view class="move" bindtap="write" wx:if="{{item.sex=='true'}}">默认</view>
+  <icon type="success" color="green"  bindtap="write" wx:if="{{index==i}}"></icon> 
+  </view>
+  </view>
+ 
+</view>
+
+
+<view class="newAddres" bindtap="newly">新增收货地址</view>

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/site/site",
+      "pages/site/sites/sites",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/classify/classify",
+    "pages/classify/car/car",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shop/shop",
+    "pages/home/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "万表商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/icon-home.png",
+        "selectedIconPath": "img/icon-home-selected.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "img/icon-category.png",
+        "selectedIconPath": "img/icon-category-selected.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物车",
+        "iconPath": "img/icon-cart.png",
+        "selectedIconPath": "img/icon-cart-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "img/icon-user.png",
+        "selectedIconPath": "img/icon-user-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

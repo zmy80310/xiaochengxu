@@ -1,0 +1,31 @@
+/* pages/classify/car/car.wxss */
+.actor1{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap; 
+}
+.sctor1-shop{
+  width:50%;
+  text-align: center;
+}
+.shop-img{
+  width:440rpx;
+  height:440rpx;
+}
+.shop-price{
+  width:90%;
+  text-align: left;
+  color:red;
+  margin-left:40rpx;
+}
+.shop-name{
+  width:90%;
+  text-align: left;
+  font-size: 28rpx;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   margin-left:40rpx;
+}

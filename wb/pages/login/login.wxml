@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+
+<view class="login">
+   <view class="header">
+    <view class="header-mobile">手机登录</view>
+    <view class="header-x"></view>
+    <view class="header-login">账号登录</view>
+   </view>
+
+  <view class="login-input">
+      <input bindinput="tel" class="login-inp" type="text" placeholder="请输入账号" value="{{tel}}"></input>
+  </view>
+
+  <view class="login-input1">
+      <input bindinput="pwo" class="login-inp" type="text" password="true" value="{{pwo}}" placeholder="请输入密码"></input>
+  </view>
+
+  <view class="btn1" bindtap="login">登录</view>
+
+  <view class="btn2" bindtap="enroll">注册</view>
+</view>

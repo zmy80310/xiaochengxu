@@ -1,0 +1,30 @@
+<!--pages/home/info/info.wxml-->
+<view class="info">
+  <image class="info-img" src="{{shopData.src}}"></image>
+
+ <view class="info-pri">¥1100 <text class="info-t">x12期</text></view>
+
+ <view class="info-price">万表价<text class="info-p">¥{{shopData.price}}</text> </view>
+ <view class="info-text">{{shopData.text}}</view>
+
+ <view class="info-z">
+  万表自营 <text class="info-zt">/让更美好的一面成为主角 (限量100枚)</text>
+ </view>
+
+
+ <view class="info-bottom">
+    <image class="item-img" src="/img/kf.png"></image>
+    <view class="item-kf">客服</view>
+
+    <image class="item-fx" src="/img/fx.png"></image>
+    <view class="fx">分享</view>
+
+    <view class="info-shop" bindtap="shop">
+      加入购物车
+    </view>
+    <view class="shop-info">
+      立即购买
+    </view>
+ </view>
+</view>
+

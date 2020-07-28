@@ -1,0 +1,13 @@
+<!--pages/classify/classify.wxml-->
+ <view class="hone-inp" bindtap="tiao">
+        <icon type="search" size="20" class="icon"></icon>
+        <text class="home-text">通过品牌、系列、型号搜索您喜爱的表款</text>
+    </view>
+
+<view class="classify">
+    <view class="cl-item" wx:for="{{shopData}}" bindtap="car" data-name="{{item.name}}">
+      <image class="cl-img" src="{{item.src}}"></image>
+      <view class="cl-text">{{item.name}}</view>
+    </view>
+
+</view>

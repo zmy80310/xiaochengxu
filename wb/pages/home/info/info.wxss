@@ -1,0 +1,101 @@
+/* pages/home/info/info.wxss */
+.info{
+  width: 100%;
+  background-color: rgba(238, 238, 238, .5);
+}
+.info-img{
+  width:100%;
+  height:600rpx;
+}
+.info-pri{
+  color:red;
+  font-size: 36rpx;
+  margin-left:40rpx;
+}
+.info-t{
+  font-size: 24rpx;
+}
+.info-price{
+  font-size: 24rpx;
+  color:#999;
+  margin-left:40rpx;
+  margin-top:10rpx;
+}
+.info-text{
+  font-size: 30rpx;
+  margin-left:40rpx;
+  margin-top:10rpx;
+}
+.info-z{
+  margin-top:10rpx;
+  font-size: 24rpx;
+  color:goldenrod;
+  margin-left: 40rpx;
+}
+.info-zt{
+  color:#000;
+}
+.info-bottom{
+ width:100%;
+ height:100rpx;
+ background-color: #FFF;
+ position: fixed;
+ left:0;
+ bottom:0;
+border:2rpx solid #000;
+}
+.item-img{
+  width:50rpx;
+  height:50rpx;
+  position: absolute;
+  left: 34rpx;
+  top: 13rpx;
+}
+.item-kf{
+  font-size: 24rpx;
+  position: absolute;
+  left:34rpx;
+  top:63rpx;
+  color:#999;
+}
+.item-fx{
+  width:50rpx;
+  height:50rpx;
+  position: absolute;
+  left: 154rpx;
+  top: 13rpx;
+}
+.fx{
+  font-size: 24rpx;
+  position: absolute;
+  left: 154rpx;
+  top:63rpx;
+  color:#999;
+}
+.info-shop{
+  width: 200rpx;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#fff;
+  background-color:darkgrey;
+  position: absolute;
+  top:20rpx;
+  left:340rpx;
+}
+.shop-info{
+   width: 200rpx;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color:#fff;
+  background-color:red;
+  position: absolute;
+  top:20rpx;
+  left:540rpx;
+}
+.info-p{
+  color:#f00;
+}

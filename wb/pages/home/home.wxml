@@ -1,0 +1,64 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+    <view class="hone-inp" bindtap="tiao">
+        <icon type="search" size="20" class="icon"></icon>
+        <text class="home-text">搜索要找的商品</text>
+    </view>
+
+    <!-- 轮播图 -->
+  <swiper class="swiper" indicator-dots="true" indicator-active-color="#FFF" autoplay="true" circular="true" easing-function="linear">
+    <swiper-item class="swiper-item" wx:for="{{swiper}}">
+        <image class="swiper-img" src="{{item.src}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- banner按钮 -->
+
+  <view class="banner">
+    <view class="banner-item" wx:for="{{banner}}">
+        <image  class="banner-img" src="{{item.src}}"></image>
+        <view class="banner-text">{{item.name}}</view>
+    </view>
+  </view>
+
+  <!-- 权威鉴定 -->
+  <view class="cost">
+    <image class="cost-img" src="https://image7.wbiao.co/mall/257aa2c928b14cc09a172ef3352a2782.png"></image>
+  
+  </view>
+
+  <!-- 优选品牌 -->
+
+  <view class="actor">
+    <text>优选品牌</text>
+    <view class="actor-text"></view>
+
+     <swiper class="swiper" indicator-dots="true" indicator-active-color="#FFF" autoplay="true" circular="true" easing-function="linear" interval="2000">
+    <swiper-item class="swiper-item" wx:for="{{swiper2}}" key="{{index}}">
+        <image class="swiper-img" src="{{item.src}}"></image>
+    </swiper-item>
+  </swiper>
+  </view>
+
+  <!-- banner2 -->
+  <view class="banner2">
+   <image class="banner2-img" wx:for="{{banner2}}" src="{{item.src}}"></image>
+  </view>
+
+  <!-- 开放共享 -->
+
+<view class="actor">
+    <text>开放共享</text>
+    <view class="actor-text"></view>
+  </view>
+
+  <!-- 商品渲染 -->
+  <view class="actor1">
+      <view class="sctor1-shop" wx:for="{{home}}" bindtap="info" data-id="{{item.id}}">
+        <image class="shop-img" src="{{item.src}}"></image>
+        <view class="shop-price">¥{{item.price}}</view>
+        <view class="shop-name">{{item.name}} {{item.text}}</view>
+      </view>
+  
+  </view>
+</view>
